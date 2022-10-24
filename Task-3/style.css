@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    color: ghostwhite;
+}
+body{
+    background: rgb(0,14,77);
+    background: linear-gradient(90deg, rgba(0,14,77,1) 0%, rgb(0, 238, 255) 100%);
+}
+
+.home{
+    margin: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.title{
+    font-family: 'Josefin Sans', sans-serif;
+    align-items: center;
+    font-size: xx-large;
+    text-align: center;
+    padding-top:6%;
+    padding-bottom: 10%;
+}
+
+.centerBlock{
+    margin: auto;
+    padding-bottom: 80px;
+    text-align: center;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Kanit', sans-serif;
+}
+
+.centerBlock .fahrenheit label{
+   display: block;
+   font-size: 40px;
+   padding: 20px;
+}
+
+.centerBlock .celcius label{
+    display: block;
+    font-size: 40px;
+    padding: 20px;
+}
+
+.centerBlock input[type=text]{
+    width: 15%;
+    padding: 20px;
+    scrollbar-width: 0;
+    border-radius: 20px;
+    background-color:lightcyan;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    font-size: larger;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 15%;
+    text-align: center;
+}
+
+.buttons button{
+    font-family: Verdana,Tahoma, sans-serif;
+    color:black;
+    text-shadow: 1px 1px #ffffff;
+    font-weight: bolder;
+    font-size: large;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    padding: 20px;
+    background: linear-gradient(124deg, #1ddde8, #e81d1d);
+}
+
+/* For Desktop View */
+@media screen and (min-width: 1024px) {
+
+    .centerBlock{
+        margin: auto;
+        text-align: center;
+        flex-direction: row;
+        width: auto;
+    }
+
+
+    .title{
+       padding-bottom: 5%;
+    }
+
+    .centerBlock input[type=text]{
+        width: 30%;
+    }
+
+    .buttons button {
+        margin-bottom: 50px;
+        width: 300px;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+
+}
